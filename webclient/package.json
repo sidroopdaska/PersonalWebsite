@@ -1,0 +1,26 @@
+{
+  "name": "webclient",
+  "version": "1.0.0",
+  "description": "Siddarth Sharma's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node fusedev.js"
+  },
+  "author": "Siddarth Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "express": "^4.15.2",
+    "fuse-box": "^2.0.0",
+    "typescript": "^2.2.2"
+  }
+}
