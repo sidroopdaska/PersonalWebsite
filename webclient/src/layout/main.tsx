@@ -1,19 +1,13 @@
-/**
- * main.ts
- * Author: sishar
- * 
- */
+import * as React from 'react';
+import { MuiThemeProvider } from "material-ui/styles";
+import { RaisedButton } from 'material-ui';
 
-import * as React from "react";
-
-interface IMainProps {
-
-}
-
-export class Main extends React.Component<IMainProps, any> {
-    public render() {
-        return (
-            <div>This is Main.</div>
-        );
-    }
+export class Main extends React.Component<any, any> {
+	public render() {
+		return (
+			<MuiThemeProvider>
+				<RaisedButton label="hello" />
+			</MuiThemeProvider>
+		);
+	}
 }

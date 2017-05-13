@@ -2,10 +2,27 @@
 <html>
 <head>
     <title>Siddarth Sharma's website</title>
+    <link rel="stylesheet" type="text/css" href="clippy/clippy.css" media="all">
+    <!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Clippy.js -->
+    <script src="clippy/clippy.min.js"></script>
+
 </head>
 <body>
     <div id="appMain"></div>
     <script src="app-bundle.js"></script>
+    <!-- Init Clippy script -->
+    <script type="text/javascript">
+        clippy.load('Clippy', function(agent) {
+            agent.show();
+            agent.speak("It looks like you're trying to hire, have you tried Liana Tomescu?")
+            $('.clippy-balloon').click(function() {
+                window.open('http://webcache.googleusercontent.com/search?q=cache:h1KHJac0wHgJ:www.lianatomescu.com/+&cd=1&hl=en&ct=clnk&gl=ie','_blank');
+            });
+        });
+    </script>
 </body>
 
 </html>
